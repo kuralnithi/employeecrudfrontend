@@ -369,7 +369,7 @@ export default function Login() {
                   onClick={handleChangePassword}
                 >
                   {" "}
-                  change password{" "}
+                  change password{""}
                 </button>
                 <a
                   className="text-blue-500 font-bold mx-2 cursor-pointer"
