@@ -289,7 +289,7 @@ export default function Login() {
               />
               <input
                 className="border p-2 my-1  w-full rounded-md placeholder-gray-500 placeholder-opacity-50 focus:outline-none focus:ring focus:border-blue-300"
-                type="text"
+                type="password"
                 value={RegPassword}
                 onChange={handleRegPasswordInp}
                 placeholder="Enter Password"
@@ -328,7 +328,7 @@ export default function Login() {
               />
               <input
                 hidden={fgtUser}
-                type="text"
+                type="password"
                 className="border p-2 my-1  w-full rounded-md placeholder-gray-500 placeholder-opacity-50 focus:outline-none focus:ring focus:border-blue-300 "
                 value={LoginPassword}
                 onChange={handleLoginPasswordInp}
