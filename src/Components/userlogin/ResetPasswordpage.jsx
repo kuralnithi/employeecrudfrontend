@@ -97,7 +97,7 @@ function ResetPasswordpage(props) {
         }
 
 
-        const fetchpassword = await fetch('http://localhost:5000/api/resetpasswordpage', {
+        const fetchpassword = await fetch('https://employee-crud-prathee.onrender.com/api/resetpasswordpage', {
 
 
             method: 'post',
