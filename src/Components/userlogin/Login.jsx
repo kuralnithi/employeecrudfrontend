@@ -317,6 +317,7 @@ export default function Login() {
 
           <div hidden={regform} className="login-form">
             <div className=" flex flex-col items-center space-y-4 ">
+              <form action="">
               <input
                 type="text"
                 className="border p-2 my-1  w-full rounded-md placeholder-gray-500 placeholder-opacity-50 focus:outline-none focus:ring focus:border-blue-300 "
@@ -378,8 +379,9 @@ export default function Login() {
                   {" "}
                   Log-in?{" "}
                 </a>
+                
               </div>
-
+              </form>
               {/* {<p>{loginStatus}</p>} */}
               {/* {<p>{loginserverStatus}</p>} */}
             </div>
