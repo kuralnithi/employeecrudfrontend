@@ -4,7 +4,7 @@
   export const createEmployee = createAsyncThunk("createEmployee", async (data) => {
     try {
       const responce = await axios
-        .post("https://employee-crud-prathee.onrender.com/api/createemployee", { data })
+        .post("http://localhost:5000/api/createemployee", { data })
         .then((res) => res.data.data);
       console.log("create Employee respomce", responce);
 
@@ -17,7 +17,7 @@
   export const getEmployee = createAsyncThunk("getEmployee", async () => {
     try {
       const responce = await axios
-        .get("https://employee-crud-prathee.onrender.com/api/getemployee")
+        .get("http://localhost:5000/api/getemployee")
         .then((res) => res.data.data);
       console.log("get Employee respomce", responce);
 
@@ -30,7 +30,7 @@
   export const deleteEmployee = createAsyncThunk("deleteEmployee", async (data) => {
     try {
       const responce = await axios
-        .post("https://employee-crud-prathee.onrender.com/api/deleteemployee", { data })
+        .post("http://localhost:5000/api/deleteemployee", { data })
         .then((res) => res.data.data);
       console.log("delete Employee respomce", responce);
 

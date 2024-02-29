@@ -78,7 +78,7 @@ export default function Login() {
 
     try {
       const regResponce = await fetch(
-        "https://employee-crud-prathee.onrender.com/api/user/register",
+        "http://localhost:5000/api/user/register",
         {
           method: "post",
           headers: {
@@ -116,7 +116,7 @@ export default function Login() {
       return;
     }
 
-    const loginRes = await fetch("https://employee-crud-prathee.onrender.com/api/user/login", {
+    const loginRes = await fetch("http://localhost:5000/api/user/login", {
       method: "post",
       headers: {
         "content-type": "application/json",
@@ -154,7 +154,7 @@ export default function Login() {
       }
 
       const forgetFetch = await fetch(
-        "https://employee-crud-prathee.onrender.com/api/resetpassword",
+        "http://localhost:5000/api/resetpassword",
         {
           method: "post",
           headers: {
@@ -201,7 +201,7 @@ export default function Login() {
       setToken(localStorage.getItem("employee-token"));
       console.log("token get from local and updated in setToken()", token);
 
-      const responce = await fetch("https://employee-crud-prathee.onrender.com/api/getuser", {
+      const responce = await fetch("http://localhost:5000/api/getuser", {
         method: "get",
         headers: {
           "content-type": "application/json",
@@ -317,7 +317,6 @@ export default function Login() {
 
           <div hidden={regform} className="login-form">
             <div className=" flex flex-col items-center space-y-4 ">
-              <form action="">
               <input
                 type="text"
                 className="border p-2 my-1  w-full rounded-md placeholder-gray-500 placeholder-opacity-50 focus:outline-none focus:ring focus:border-blue-300 "
@@ -381,7 +380,7 @@ export default function Login() {
                 </a>
                 
               </div>
-              </form>
+            
               {/* {<p>{loginStatus}</p>} */}
               {/* {<p>{loginserverStatus}</p>} */}
             </div>
